@@ -1,6 +1,7 @@
 .DS_Store
 Thumbs.db
 /node_modules
+/vendor
 db/
 server.*
 .idea
@@ -8,3 +9,9 @@ server.*
 .csr
 .key
 .tmp
+.env
+
+# specific to miguelangelgarcia.com
+/public/php.ini
+/public/.htaccess
+/public/apple-touch-icon.png
