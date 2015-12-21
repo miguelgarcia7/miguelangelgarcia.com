@@ -1,0 +1,9 @@
+{
+  "name": "Laravel Application",
+  "dependencies": {
+    "isotope": "~2.2.2",
+    "superslides": "~0.6.2",
+    "Chart.js": "~1.0.2",
+    "gsap": "~1.18.1"
+  }
+}
