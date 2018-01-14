@@ -1,0 +1,63 @@
+@include font-face(miguel, '../fonts/miguel');
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'miguel';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-html5_css3_styling:before {
+  content: "\e607";
+}
+
+.icon-html5_3d_effects:before {
+  content: "\e600";
+}
+
+.icon-html5_connectivity:before {
+  content: "\e601";
+}
+
+.icon-html5_device_access:before {
+  content: "\e602";
+}
+
+.icon-html5_multimedia:before {
+  content: "\e603";
+}
+
+.icon-html5_offline_storage:before {
+  content: "\e604";
+}
+
+.icon-html5_perfintegration:before {
+  content: "\e605";
+}
+
+.icon-html5_semantics:before {
+  content: "\e606";
+}
+
+.icon-rocket:before {
+  content: "\e9a5";
+}
+
+.icon-facebook2:before {
+  content: "\ea8d";
+}
+
+.icon-twitter2:before {
+  content: "\ea92";
+}
+
+.icon-linkedin:before {
+  content: "\eac8";
+}

@@ -1,0 +1,141 @@
+#intro {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  top: 30%;
+  text-align: center;
+}
+#intro p {
+  font-size: 16px;
+  color: #9295a1;
+}
+
+.status_numbers,
+.status_numbers h3,
+.status_numbers p,
+.status_numbers ul li {
+  color: #fff;
+  line-height: 38px;
+}
+.status_numbers ul {
+  padding: 25px 0 0 20px;
+}
+.status_numbers .doughnut-legend {
+  padding: 25px 0 0 30px;
+}
+.doughnut-legend li {
+  list-style: none;
+}
+.doughnut-legend li span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin: 0 15px 0 0;
+  border: 1px solid #fff;
+}
+
+.experience {
+  text-align: center;
+}
+.technologies {
+  position: relative;
+  padding: 30px 0 0 0;
+}
+.technologies i {
+  position: relative;
+  font-size: 50px;
+  color: #90939c;
+  display: inline-block;
+  width: 50%;
+  float: left;
+  margin-top: 25px;
+}
+
+.technologies .icon-html5_3d_effects {
+
+}
+.technologies .icon-html5_semantics {
+
+}
+.technologies .icon-html5_connectivity {
+
+}
+.technologies .icon-html5_multimedia  {
+
+}
+.technologies .icon-html5_device_access {
+
+}
+.technologies .icon-html5_css3_styling {
+
+}
+.technologies .icon-html5_offline_storage {
+
+}
+.technologies .icon-html5_perfintegration {
+
+}
+
+.portfolio h2 {
+  color: #fff;
+}
+.portfolio h3 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #8c9099;
+  margin: 0 0 5px 0;
+  font-weight: normal;
+  text-shadow: 0 1px 0 #23252d;
+}
+.portfolio p {
+  color: #8c9099;
+}
+.portfolio .quote {
+  color: #fff;
+}
+.portfolio .item-text {
+  text-align: center;
+  padding: 10px 0;
+}
+.portfolio ul {
+  padding: 20px 0 20px 0;
+}
+.portfolio ul li a {
+  font-size: 14px;
+  color: #8c9099;
+}
+.portfolio .item  {
+  min-height: 425px;
+}
+.portfolio .item img {
+  border: 1px solid #23252d;
+}
+
+// .isotope .item > div {
+//   background: #70737a;
+//   height: 100%;
+//   width: 100%;
+//   margin-bottom: 25px;
+// }
+
+.container > .row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.wrap {
+  display: block;
+  clear: both;
+  padding: 30px 0;
+}
+.bg-orage {
+  background: #ff675f;
+}
+.bg-dark-blue {
+  background: #323641;
+}
+
+
+#contact {
+  display: none;
+}

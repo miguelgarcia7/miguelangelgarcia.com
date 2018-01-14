@@ -1,0 +1,298 @@
+/* Utilities
+------------------------------------------------------------------------------ */
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'utils/mixins';
+
+/* Base css
+------------------------------------------------------------------------------ */
+@import 'base/typography';
+@import 'base/helper';
+@import 'base/print';
+
+/* Layout for main sections
+------------------------------------------------------------------------------ */
+@import 'layout/navigation';
+@import 'layout/sidebar';
+@import 'layout/footer';
+
+/* Components
+------------------------------------------------------------------------------ */
+@import 'components/icons';
+
+/* Pages
+------------------------------------------------------------------------------ */
+@import 'pages/home';
+
+/* 3rd Party
+------------------------------------------------------------------------------ */
+.btn {
+  border-radius: 0;
+  padding: 10px 18px;
+}
+.btn-primary {
+  color: #8c9099;
+  background-image: -webkit-linear-gradient(top, #474c5b 0%, #323641 100%);
+  background-image:      -o-linear-gradient(top, #474c5b 0%, #323641 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#474c5b), to(#323641));
+  background-image:         linear-gradient(to bottom, #474c5b 0%, #323641 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff265a88', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #474c5b;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #323641;
+  background-position: 0 -15px;
+}
+
+.btn-launch {
+  color: #ff675f;
+  border-color: #323641;
+  padding: 6px 6px;
+}
+.btn-launch:hover,
+.btn-launch:focus {
+  color: #fff;
+  background-color: #ff675f;
+}
+
+
+#slides {
+  position: relative;
+  background: #323641;
+  min-height: 300px;
+}
+#slides .slides-container {
+  display: none;
+}
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+}
+.slides-navigation a {
+  position: absolute;
+  display: block;
+}
+.slides-navigation a.prev {
+  left: 0;
+}
+.slides-navigation a.next {
+  right: 0;
+}
+
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.slides-pagination a {
+  border: 2px solid #222;
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+  margin: 2px;
+  overflow: hidden;
+  text-indent: -100%;
+}
+.slides-pagination a.current {
+  background: #222;
+}
+
+@import 'pages/home';
+
+/* Custom Media Queries
+------------------------------------------------------------------------------ */
+
+@include breakpoint(medium){
+  h1 {
+    font-size: 60px;
+    line-height: 70px;
+    margin: 0 0 10px 0;
+    letter-spacing: -4px;
+  }
+  h1 > .subtitle {
+    font-size: 25px;
+    line-height: 45px;
+  }
+  h2 {
+    font-size: 70px;
+    line-height: 70px;
+    margin: 0 0 30px 0;
+  }
+  .quote { font-size: 30px; line-height: 40px;}
+  h3 {
+    font-size: 28px;
+    line-height: 31px;
+  }
+
+  .navbar-default .navbar-nav>li {
+    display: inline-block;
+    float: none;
+  }
+  .navbar-default .navbar-nav>li>a {
+    display: inline-block;
+  }
+  #slides {
+  min-height: 500px;
+  }
+  #intro p {
+    font-size: 16px;
+  }
+  .container > .row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .wrap {
+    padding: 60px 0;
+  }
+  .technologies {
+    padding: 100px 0 0 0;
+  }
+  .technologies .img-responsive {
+    display: inline;
+  }
+  .technologies i {
+    position: absolute;
+    width: auto;
+  }
+  .technologies .icon-html5_3d_effects {
+    top: 6%;
+    left: 0%;
+  }
+  .technologies .icon-html5_semantics {
+    top: 27%;
+    left: 10%;
+  }
+  .technologies .icon-html5_connectivity {
+    top: 49%;
+    left: 3%;
+  }
+  .technologies .icon-html5_multimedia  {
+    top: 70%;
+    left: 12%;
+  }
+  .technologies .icon-html5_device_access {
+    top: 6%;
+    right: 0%;
+  }
+  .technologies .icon-html5_css3_styling {
+    top: 27%;
+    right: 10%;
+  }
+  .technologies .icon-html5_offline_storage {
+    top: 49%;
+    right: 3%;
+  }
+  .technologies .icon-html5_perfintegration {
+    top: 70%;
+    right: 12%;
+  }
+  .portfolio .item {
+    min-height: 325px;
+  }
+}
+
+@include breakpoint(large){
+  h1 {
+    font-size: 70px;
+    line-height: 80px;
+    margin: 0 0 10px 0;
+    letter-spacing: -5px;
+  }
+  h1 > .subtitle {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  #slides {
+  min-height: 700px;
+  }
+  #intro p {
+    font-size: 20px;
+  }
+  .technologies .icon-html5_3d_effects {
+    top: 6%;
+    left: 9%;
+  }
+  .technologies .icon-html5_semantics {
+    top: 27%;
+    left: 18%;
+  }
+  .technologies .icon-html5_connectivity {
+    top: 49%;
+    left: 12%;
+  }
+  .technologies .icon-html5_multimedia  {
+    top: 70%;
+    left: 22%;
+  }
+  .technologies .icon-html5_device_access {
+    top: 6%;
+    right: 9%;
+  }
+  .technologies .icon-html5_css3_styling {
+    top: 27%;
+    right: 18%;
+  }
+  .technologies .icon-html5_offline_storage {
+    top: 49%;
+    right: 12%;
+  }
+  .technologies .icon-html5_perfintegration {
+    top: 70%;
+    right: 22%;
+  }
+  .portfolio .item {
+    min-height: 400px;
+  }
+ }
+
+@include breakpoint(extra-large){
+  h1 {
+    font-size: 90px;
+    line-height: 100px;
+    margin: 0 0 10px 0;
+    letter-spacing: -6px;
+  }
+  h1 > .subtitle {
+    font-size: 45px;
+    line-height: 65px;
+  }
+  #slides {
+  min-height: 800px;
+  }
+  #intro p {
+    font-size: 24px;
+  }
+  .portfolio .item {
+    min-height: 425px;
+  }
+ }

@@ -1,0 +1,145 @@
+html, body {
+  height: 100%; border-radius:4px; }
+
+html {
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+  color: #ff554e;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  font-weight: $bold;
+  letter-spacing: -3px;
+}
+h1 > span {
+  color: #fff;
+}
+h1 > .subtitle {
+  font-size: 25px;
+  line-height: 35px;
+  color: #fff;
+  display: block;
+  vertical-align: middle;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  color: #323641;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  text-align: center;
+  letter-spacing: -3px;
+  font-family: 'Montserrat', sans-serif;
+}
+.quote { font-size: 15px; line-height: 20px; color: #323641; font-style: italic; font-weight: normal; text-align: center;}
+
+h3 {
+  font-size: 18px;
+  line-height: 21px;
+  color: #323641;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #ff554e;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #e51937;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+}
+
+p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #ff554e;
+  outline: 0;
+}
+
+a:focus {
+  color: #ff554e;
+  outline: none;
+}
+
+a:hover {
+  color: #ff554e;
+}
+
+a img {
+  border: none;
+}
+
+ul, ol {
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 15px;
+}
+
+table {
+  border-collapse: separate;
+  width: 100%;
+}
+
+table th {
+  display: table-cell;
+}
+
+table td {
+  display: table-cell;
+}
+
+::-moz-selection {
+  background: #ff675f;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ff675f;
+  text-shadow: none;
+  }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  }
