@@ -6,7 +6,7 @@
     <title>Miguel Garcia</title>
     <meta name="description" content="Building Beautiful Web and Mobile Experiences">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/app.min.css">
+    <link rel="stylesheet" href="/css/app.min.css?v=20180218">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:700' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -381,6 +381,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
     <!--<![endif]-->
-    <script src="/js/app.min.js"></script>
+    <script src="/js/app.min.js?v=20180218"></script>
 </body>
 </html>
