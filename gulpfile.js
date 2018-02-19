@@ -26,11 +26,16 @@ gulp.task('minify-html', function() {
 });
 
 elixir(function(mix) {
-    mix.sass([libs.superslides + 'stylesheets/superslides.css', 'app.scss'], 'public/css/app.min.css')
-        .copy(libs.bootstrap + 'fonts/bootstrap/**', 'public/fonts')
+    mix.sass(['app.scss'], 'public/css/app.min.css')
+    // mix.sass([libs.superslides + 'stylesheets/superslides.css', 'app.scss'], 'public/css/app.min.css')
+        // .copy(libs.bootstrap + 'fonts/bootstrap/**', 'public/fonts')
         .scripts(
             [
-                libs.superslides + 'jquery.superslides.js',
+                // libs.bootstrap + 'javascripts/bootstrap/modal.js',
+                libs.bootstrap + 'javascripts/bootstrap/collapse.js',
+                libs.bootstrap + 'javascripts/bootstrap/transition.js',
+                // libs.bootstrap + 'javascripts/bootstrap/tab.js',
+                // libs.superslides + 'jquery.superslides.js',
                 libs.isotope + 'isotope.pkgd.js',
                 libs.chartjs + 'Chart.js',
                 libs.greensock + 'TweenLite.js',

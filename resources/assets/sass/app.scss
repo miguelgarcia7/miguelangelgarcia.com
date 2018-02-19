@@ -1,5 +1,6 @@
 /* Utilities
 ------------------------------------------------------------------------------ */
+@import 'utils/bootstrap';
 @import 'utils/variables';
 @import 'utils/functions';
 @import 'utils/mixins';
@@ -33,9 +34,9 @@
 .btn-primary {
   color: #8c9099;
   background-image: -webkit-linear-gradient(top, #474c5b 0%, #323641 100%);
-  background-image:      -o-linear-gradient(top, #474c5b 0%, #323641 100%);
+  background-image: -o-linear-gradient(top, #474c5b 0%, #323641 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#474c5b), to(#323641));
-  background-image:         linear-gradient(to bottom, #474c5b 0%, #323641 100%);
+  background-image: linear-gradient(to bottom, #474c5b 0%, #323641 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff265a88', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
@@ -137,7 +138,7 @@
     font-size: 60px;
     line-height: 70px;
     margin: 0 0 10px 0;
-    letter-spacing: -4px;
+    letter-spacing: -3px;
   }
   h1 > .subtitle {
     font-size: 25px;
@@ -148,10 +149,15 @@
     line-height: 70px;
     margin: 0 0 30px 0;
   }
-  .quote { font-size: 30px; line-height: 40px;}
+  .quote { font-size: 24px; line-height: 30px;}
   h3 {
     font-size: 28px;
     line-height: 31px;
+    margin: 0 0 15px 0;
+  }
+  h4 {
+    font-size: 22px;
+    line-height: 28px;
   }
 
   .navbar-default .navbar-nav>li {
@@ -216,6 +222,10 @@
     top: 70%;
     right: 12%;
   }
+  .technologies .icon {
+    // width: 100px;
+    margin-bottom: 30px;
+  }
   .portfolio .item {
     min-height: 325px;
   }
@@ -226,7 +236,7 @@
     font-size: 70px;
     line-height: 80px;
     margin: 0 0 10px 0;
-    letter-spacing: -5px;
+    letter-spacing: -3px;
   }
   h1 > .subtitle {
     font-size: 35px;
@@ -270,6 +280,9 @@
     top: 70%;
     right: 22%;
   }
+  .technologies .icon {
+    width: 100px;
+  }
   .portfolio .item {
     min-height: 400px;
   }
@@ -280,7 +293,7 @@
     font-size: 90px;
     line-height: 100px;
     margin: 0 0 10px 0;
-    letter-spacing: -6px;
+    letter-spacing: -4px;
   }
   h1 > .subtitle {
     font-size: 45px;
@@ -290,7 +303,7 @@
   min-height: 800px;
   }
   #intro p {
-    font-size: 24px;
+    font-size: 22px;
   }
   .portfolio .item {
     min-height: 425px;

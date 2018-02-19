@@ -1,12 +1,19 @@
+#hero {
+  position: relative;
+  min-height: 540px;
+  background-image: url(../images/web-artisan1.jpg);
+  @include background-cover();
+}
 #intro {
   position: absolute;
   z-index: 99;
   width: 100%;
   top: 30%;
   text-align: center;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
 }
 #intro p {
-  font-size: 16px;
+  font-size: 15px;
   color: #9295a1;
 }
 
@@ -76,6 +83,13 @@
 .technologies .icon-html5_perfintegration {
 
 }
+
+.technologies .icon {
+  width: 80px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
 
 .portfolio h2 {
   color: #fff;
